@@ -13,9 +13,10 @@ region=xxxxx
 pass_phrase=xxxxx
 ```
 and include `/oci_api_key.pem` file.
+
 ```
 docker build -t stream-to-adw . 
-docker run -it stream-to-adw:latest
+docker run -it -p 127.0.0.1:8081:8081 stream-to-adw:latest
 ```
 
 `docker tag` and `docker push`
